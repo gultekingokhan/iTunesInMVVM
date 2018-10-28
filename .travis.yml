@@ -4,7 +4,7 @@
     "xcodebuild test -workspace iTunesInMVVM.xcworkspace -scheme iTunesInMVVM -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'"
   ],
   "language": "objective-c",
-  "osx_image": "xcode10.0",
+  "osx_image": "xcode10",
   "before_install": [
     "gem install cocoapods",
     "pod install"
