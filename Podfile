@@ -6,7 +6,7 @@ target 'iTunesInMVVM' do
 use_frameworks!
 pod 'Alamofire'
 pod 'AlamofireImage'
-pod 'VCommon'
+# pod 'VCommon'
 
 target 'iTunesInMVVMTests' do
     inherit! :search_paths

@@ -8,7 +8,6 @@
 
 import UIKit
 import AlamofireImage
-import VCommon
 
 class TrackTableViewCell: UITableViewCell {
 
@@ -23,7 +22,7 @@ class TrackTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         coverImageView.layer.roundCorners(corners: [.topLeft, .bottomLeft], radius: radius)
-        containerView.roundCorners(radius: radius)
+        containerView.layer.cornerRadius = radius
         containerView.dropShadow()
     }
 
@@ -41,7 +40,7 @@ class TrackTableViewCell: UITableViewCell {
     }
 }
 
-//TODO: Move this extension to the new Pod
+//TODO: Move these extensions to the new Pod
 extension CALayer {
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: bounds,
@@ -51,5 +50,16 @@ extension CALayer {
         let shape = CAShapeLayer()
         shape.path = maskPath.cgPath
         mask = shape
+    }
+}
+
+extension UIView {
+    
+    public func dropShadow() {
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowOpacity = 0.70
+        layer.shadowRadius = 12
+        layer.shadowColor = UIColor.lightGray.cgColor
     }
 }
