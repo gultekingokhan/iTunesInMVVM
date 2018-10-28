@@ -25,9 +25,16 @@ class SearchViewController: UIViewController {
         let nib = UINib(nibName: "TrackTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TrackTableViewCell")
         
-        self.dataSource.data.bind { (results) in
+        dataSource.data.bind { (results) in
             self.tableView.reloadData()
         }
         viewModel.search(query: "metallica")
+        
+        perform(#selector(updateData), with: self, afterDelay: 3.0)
+    }
+    
+    @objc func updateData() {
+        //Demonstrating how binding works.
+        viewModel.search(query: "megadeth")
     }
 }
