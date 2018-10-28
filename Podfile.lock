@@ -2,20 +2,24 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
+  - VCommon (0.1.8)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - VCommon
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - VCommon
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  VCommon: 82cdb247f4a1e27dc38898931c3540691750d675
 
-PODFILE CHECKSUM: aa7190b825286c25d31c5e37df40a919db3d6bc0
+PODFILE CHECKSUM: 95ef0dd57f3f0fc24cad2e10c13d64a2d4926b8e
 
 COCOAPODS: 1.5.3
