@@ -1,7 +1,7 @@
 {
   "os": "osx",
   "script": [
-    "xcodebuild test -workspace iTunesInMVVM.xcworkspace -scheme \"iTunesInMVVM\" -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'"
+    "xcodebuild test -workspace iTunesInMVVM.xcworkspace -scheme iTunesInMVVM -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'"
   ],
   "language": "swift",
   "osx_image": "xcode10.0",
