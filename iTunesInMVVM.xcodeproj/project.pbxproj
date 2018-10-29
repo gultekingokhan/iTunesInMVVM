@@ -25,6 +25,10 @@
 		76997E17217689FB00E48694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76997E15217689FB00E48694 /* LaunchScreen.storyboard */; };
 		76997E22217689FB00E48694 /* iTunesInMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76997E21217689FB00E48694 /* iTunesInMVVMTests.swift */; };
 		76997E2D217689FB00E48694 /* iTunesInMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76997E2C217689FB00E48694 /* iTunesInMVVMUITests.swift */; };
+		76B4E36B2186DFEC0096C5EF /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 76B4E36A2186DFEC0096C5EF /* sample.json */; };
+		76B4E36D218717C10096C5EF /* RequestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4E36C218717C10096C5EF /* RequestServiceTests.swift */; };
+		76B4E36F21871AC20096C5EF /* TrackViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4E36E21871AC20096C5EF /* TrackViewModelTests.swift */; };
+		76B4E37121877C160096C5EF /* TrackDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4E37021877C150096C5EF /* TrackDataSourceTests.swift */; };
 		9785BF6FC6A5646ADBAAF071 /* Pods_iTunesInMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C23E1600B6D85B33CEF471D /* Pods_iTunesInMVVMTests.framework */; };
 		D912264ED9D9F203F3E0E151 /* Pods_iTunesInMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC2B63780E869A1163C00C /* Pods_iTunesInMVVM.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +78,10 @@
 		76997E28217689FB00E48694 /* iTunesInMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesInMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76997E2C217689FB00E48694 /* iTunesInMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesInMVVMUITests.swift; sourceTree = "<group>"; };
 		76997E2E217689FB00E48694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B4E36A2186DFEC0096C5EF /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		76B4E36C218717C10096C5EF /* RequestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestServiceTests.swift; sourceTree = "<group>"; };
+		76B4E36E21871AC20096C5EF /* TrackViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModelTests.swift; sourceTree = "<group>"; };
+		76B4E37021877C150096C5EF /* TrackDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDataSourceTests.swift; sourceTree = "<group>"; };
 		9BCF4F122258F701B37F30BE /* Pods-iTunesInMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesInMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesInMVVMTests/Pods-iTunesInMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5BC2B63780E869A1163C00C /* Pods_iTunesInMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesInMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA62A68B7973D6928BB7FB4B /* Pods-iTunesInMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesInMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesInMVVM/Pods-iTunesInMVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,7 +211,11 @@
 		76997E20217689FB00E48694 /* iTunesInMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				76B4E36A2186DFEC0096C5EF /* sample.json */,
 				76997E21217689FB00E48694 /* iTunesInMVVMTests.swift */,
+				76B4E36C218717C10096C5EF /* RequestServiceTests.swift */,
+				76B4E36E21871AC20096C5EF /* TrackViewModelTests.swift */,
+				76B4E37021877C150096C5EF /* TrackDataSourceTests.swift */,
 				76997E23217689FB00E48694 /* Info.plist */,
 			);
 			path = iTunesInMVVMTests;
@@ -356,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B4E36B2186DFEC0096C5EF /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B4E37121877C160096C5EF /* TrackDataSourceTests.swift in Sources */,
 				76997E22217689FB00E48694 /* iTunesInMVVMTests.swift in Sources */,
+				76B4E36F21871AC20096C5EF /* TrackViewModelTests.swift in Sources */,
+				76B4E36D218717C10096C5EF /* RequestServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSY84C533D;
 				INFOPLIST_FILE = iTunesInMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSY84C533D;
 				INFOPLIST_FILE = iTunesInMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

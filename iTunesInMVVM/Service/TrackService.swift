@@ -30,5 +30,4 @@ class TrackService: NSObject, TrackServiceProtocol {
             failure(error)
         })
     }
- 
 }

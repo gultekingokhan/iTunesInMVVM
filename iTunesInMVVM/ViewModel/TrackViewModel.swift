@@ -19,7 +19,9 @@ struct TrackViewModel {
         self.service = service
     }
     
-    func search(query: String) {
+    func search(query: String,
+                success: ((_ result: TrackResponseModel) -> Void)? = nil,
+                failure: ((_ error: ErrorModel) -> Void)? = nil) {
 
         service?.search(query: query, success: { (data) in
             
@@ -32,11 +34,16 @@ struct TrackViewModel {
             }
 
         }, failure: { (error) in
-            let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-            let doneAction = UIAlertAction(title: "Done", style: .default, handler: { (aa) in
-                alertController.dismiss(animated: true, completion: nil)
-            })
-            alertController.addAction(doneAction)
+            self.showAlertView(message: error.localizedDescription)
         })
     }
+    
+    func showAlertView(message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: "Done", style: .default, handler: { (aa) in
+            alertController.dismiss(animated: true, completion: nil)
+        })
+        alertController.addAction(doneAction)
+    }
 }
+
