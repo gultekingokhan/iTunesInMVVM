@@ -5,3 +5,7 @@ An example app for practicing MVVM architecture with using iTunes API.
 ![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0%2B-blue.svg) 
 ![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-orange.svg)
 ![Swift 4.2+](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)
+
+Do not forget to run `pod install` before running the project.
+
+Inspired by: [Benoit Pasquier](https://github.com/popei69/TemplateProject)
