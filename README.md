@@ -9,3 +9,6 @@ An example app for practicing MVVM architecture with using iTunes API.
 Do not forget to run `pod install` before running the project.
 
 Inspired by: [Benoit Pasquier](https://github.com/popei69/TemplateProject)
+
+[Here is a Medium post that I shared my learning progress of MVVM.](https://medium.com/@GultekinGokhan/learning-mvvm-for-ios-development-8efd60f734ca)
+
