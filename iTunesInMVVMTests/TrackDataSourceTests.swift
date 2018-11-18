@@ -11,8 +11,8 @@ import XCTest
 
 class TrackDataSourceTests: XCTestCase {
 
-    let track1 = Track(artistName: "Metallica", trackId: "579373079", trackName: "Enter Sandman", artworkUrl100: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0b/9c/d2/0b9cd2e7-6e76-8912-0357-14780cc2616a/source/100x100bb.jpg")
-    let track2 = Track(artistName: "Metallica", trackId: "579373086", trackName: "Nothing Else Matters", artworkUrl100: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0b/9c/d2/0b9cd2e7-6e76-8912-0357-14780cc2616a/source/100x100bb.jpg")
+    let track1 = Track(artistName: "Metallica", trackId: 579373079, trackName: "Enter Sandman", artworkUrl100: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0b/9c/d2/0b9cd2e7-6e76-8912-0357-14780cc2616a/source/100x100bb.jpg")
+    let track2 = Track(artistName: "Metallica", trackId: 579373086, trackName: "Nothing Else Matters", artworkUrl100: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0b/9c/d2/0b9cd2e7-6e76-8912-0357-14780cc2616a/source/100x100bb.jpg")
 
     var dataSource: TrackDataSource!
     

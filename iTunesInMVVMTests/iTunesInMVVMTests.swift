@@ -42,7 +42,7 @@ class iTunesInMVVMTests: XCTestCase {
         }
         
         let response = try? JSONDecoder().decode(TrackResponseModel.self, from: data)
-        XCTAssertEqual(response?.results?.first?.trackId, "579373079")
+        XCTAssertEqual(response?.results?.first?.trackId, 579373079)
         XCTAssertEqual(response?.results?.first?.trackName, "Enter Sandman")
         XCTAssertEqual(response?.results?.first?.artistName, "Metallica")
         XCTAssertEqual(response?.results?.first?.artworkUrl100, "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0b/9c/d2/0b9cd2e7-6e76-8912-0357-14780cc2616a/source/100x100bb.jpg")

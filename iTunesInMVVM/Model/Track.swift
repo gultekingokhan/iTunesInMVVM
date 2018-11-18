@@ -16,7 +16,7 @@ struct TrackResponseModel: Decodable {
 struct Track: Decodable {
     
     let artistName: String?
-    let trackId: String?
+    let trackId: Int?
     let trackName: String?
     let artworkUrl100: String?
 }

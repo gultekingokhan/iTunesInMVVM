@@ -22,9 +22,12 @@ class TrackService: NSObject, TrackServiceProtocol {
         NSObject.cancelPreviousPerformRequests(withTarget: self)
         
         RequestService.get(path: "search", params: ["term":query], headers: nil, success: { (data) in
-                        
-            let response = try? JSONDecoder().decode(TrackResponseModel.self, from: data)
-            success(response!)
+            
+            guard let response = try? JSONDecoder().decode(TrackResponseModel.self, from: data) else {
+                failure(ErrorModel.parse(string: "Parsing error."))
+                return
+            }
+            success(response)
 
         }, failure: { (error) in
             failure(error)
